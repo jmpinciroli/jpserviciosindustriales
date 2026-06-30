@@ -17,7 +17,7 @@ html {
 .hero {
   height: 100vh;
   position: relative;
-  background: url('images/logo.png') center/cover no-repeat;
+  background: url('images/logon.png') center/cover no-repeat;
 }
 
 .overlay {
