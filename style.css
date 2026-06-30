@@ -113,3 +113,13 @@ font-size:18px;
 }
 
 }
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 150px;
+}
