@@ -353,5 +353,31 @@
   
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
+  <script>
+
+function mostrarContacto() {
+
+    document.querySelector('.hero').style.display = 'none';
+
+    document.querySelectorAll('.section').forEach(section => {
+        section.style.display = 'none';
+    });
+
+    document.getElementById('contacto-page').style.display = 'flex';
+}
+
+function volverInicio() {
+
+    document.querySelector('.hero').style.display = 'block';
+
+    document.querySelectorAll('.section').forEach(section => {
+        section.style.display = 'block';
+    });
+
+    document.getElementById('contacto-page').style.display = 'none';
+}
+
+</script>
+
 </body>
 </html>
