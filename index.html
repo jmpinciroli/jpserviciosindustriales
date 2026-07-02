@@ -38,7 +38,7 @@
         <li class="nav-item"><a href="#diseno" class="nav-link">Diseño</a></li>
         <li class="nav-item"><a href="#desarrollo" class="nav-link">Desarrollo</a></li>
         <li class="nav-item"><a href="#resultados" class="nav-link">Resultados</a></li>
-        <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+        <li class="nav-item"><a href="#" class="nav-link" onclick="mostrarcontacto();">Contacto</a></li>
       </ul>
     </div>
   </div>
@@ -355,12 +355,27 @@
 
   <script>
 
+<script>
+
+function mostrarSeccion(id) {
+
+    document.querySelector('.hero').style.display = 'none';
+
+    document.querySelectorAll('.contenido').forEach(seccion => {
+        seccion.style.display = 'none';
+    });
+
+    document.getElementById('contacto-page').style.display = 'none';
+
+    document.getElementById(id).style.display = 'block';
+}
+
 function mostrarContacto() {
 
     document.querySelector('.hero').style.display = 'none';
 
-    document.querySelectorAll('.section').forEach(section => {
-        section.style.display = 'none';
+    document.querySelectorAll('.contenido').forEach(seccion => {
+        seccion.style.display = 'none';
     });
 
     document.getElementById('contacto-page').style.display = 'flex';
@@ -370,8 +385,8 @@ function volverInicio() {
 
     document.querySelector('.hero').style.display = 'block';
 
-    document.querySelectorAll('.section').forEach(section => {
-        section.style.display = 'block';
+    document.querySelectorAll('.contenido').forEach(seccion => {
+        seccion.style.display = 'block';
     });
 
     document.getElementById('contacto-page').style.display = 'none';
