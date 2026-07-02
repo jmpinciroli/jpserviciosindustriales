@@ -353,43 +353,53 @@
   
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script>
-
 <script>
 
 function mostrarSeccion(id) {
 
-    document.querySelector('.hero').style.display = 'none';
+    const hero = document.querySelector('.hero');
+    const contacto = document.getElementById('contacto-page');
 
-    document.querySelectorAll('.contenido').forEach(seccion => {
+    if(hero) hero.style.display = 'none';
+    if(contacto) contacto.style.display = 'none';
+
+    document.querySelectorAll('.section').forEach(function(seccion) {
         seccion.style.display = 'none';
     });
-
-    document.getElementById('contacto-page').style.display = 'none';
 
     document.getElementById(id).style.display = 'block';
 }
 
 function mostrarContacto() {
 
-    document.querySelector('.hero').style.display = 'none';
+    const hero = document.querySelector('.hero');
+    const contacto = document.getElementById('contacto-page');
 
-    document.querySelectorAll('.contenido').forEach(seccion => {
+    if(hero) hero.style.display = 'none';
+
+    document.querySelectorAll('.section').forEach(function(seccion) {
         seccion.style.display = 'none';
     });
 
-    document.getElementById('contacto-page').style.display = 'flex';
+    if(contacto) {
+        contacto.style.display = 'flex';
+    }
 }
 
 function volverInicio() {
 
-    document.querySelector('.hero').style.display = 'block';
+    const hero = document.querySelector('.hero');
+    const contacto = document.getElementById('contacto-page');
 
-    document.querySelectorAll('.contenido').forEach(seccion => {
+    if(hero) hero.style.display = 'block';
+
+    document.querySelectorAll('.section').forEach(function(seccion) {
         seccion.style.display = 'block';
     });
 
-    document.getElementById('contacto-page').style.display = 'none';
+    if(contacto) {
+        contacto.style.display = 'none';
+    }
 }
 
 </script>
