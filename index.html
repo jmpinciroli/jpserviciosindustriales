@@ -353,18 +353,11 @@
   
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 
-<script>
+  
+    <form action="https://formsubmit.co/jpserviciosindustriales@gmail.comype="hidden" name="_subject"
+           value="Nueva consulta desde JP Servicios Industriales">
 
-<form action="https://formsubmit.co/jpserviciosindustriales@gmail.com" method="POST">
-
-    <input type="hidden" name="_subject" value="Nueva consulta desde JP Servicios Industriales">
     <input type="hidden" name="_captcha" value="false">
-
-    <!-- Redirige al volver del envío -->
-    <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
-
-    <!-- Evita spam básico -->
-    <input type="text" name="_honey" style="display:none">
 
     <div class="mb-3">
         <input type="text"
@@ -401,15 +394,13 @@
         Enviar Consulta
     </button>
 
-    <a href="https://wa.me/5493547477700"
-       class="btn btn-success ms-2"
-       target="_blank">
-       WhatsApp
-    </a>
+    <button type="button"
+            class="btn btn-outline-light ms-2"
+            onclick="volverInicio()">
+        Volver
+    </button>
 
 </form>
-
-</script>
 
 </body>
 </html>
