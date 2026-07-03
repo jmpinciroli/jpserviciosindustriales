@@ -381,14 +381,15 @@
 
 function mostrarContacto() {
 
-    alert("Botón funcionando");
+    document.querySelector('.hero').style.display = 'none';
 
-    document.getElementById("contacto-page").style.display = "flex";
+    document.querySelectorAll('.section').forEach(function(seccion) {
+        seccion.style.display = 'none';
+    });
+
+    document.getElementById('contacto-page').style.display = 'flex';
 }
 
-function volverInicio() {
-    document.getElementById("contacto-page").style.display = "none";
-}
 
 </script>
 
