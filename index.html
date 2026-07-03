@@ -355,52 +355,49 @@
 
 <script>
 
-function mostrarSeccion(id) {
+<form action="https://formsubmit.co/jpserviciosindustriales@gmail.com" method="POST">
 
-    const hero = document.querySelector('.hero');
-    const contacto = document.getElementById('contacto-page');
+    <input type="hidden" name="_subject" value="Nueva consulta desde JP Servicios Industriales">
+    <input type="hidden" name="_captcha" value="false">
 
-    if(hero) hero.style.display = 'none';
-    if(contacto) contacto.style.display = 'none';
+    <div class="mb-3">
+        <input type="text"
+               class="form-control"
+               name="Nombre"
+               placeholder="Nombre y Apellido"
+               required>
+    </div>
 
-    document.querySelectorAll('.section').forEach(function(seccion) {
-        seccion.style.display = 'none';
-    });
+    <div class="mb-3">
+        <input type="email"
+               class="form-control"
+               name="Email"
+               placeholder="Correo Electrónico"
+               required>
+    </div>
 
-    document.getElementById(id).style.display = 'block';
-}
+    <div class="mb-3">
+        <input type="tel"
+               class="form-control"
+               name="Telefono"
+               placeholder="Teléfono">
+    </div>
 
-function mostrarContacto() {
+    <div class="mb-3">
+        <textarea class="form-control"
+                  name="Consulta"
+                  rows="6"
+                  placeholder="Describa su consulta"
+                  required></textarea>
+    </div>
 
-    const hero = document.querySelector('.hero');
-    const contacto = document.getElementById('contacto-page');
+    <button type="submit" class="btn btn-primary">
+        Enviar Consulta
+    </button>
 
-    if(hero) hero.style.display = 'none';
+</form>
+``
 
-    document.querySelectorAll('.section').forEach(function(seccion) {
-        seccion.style.display = 'none';
-    });
-
-    if(contacto) {
-        contacto.style.display = 'flex';
-    }
-}
-
-function volverInicio() {
-
-    const hero = document.querySelector('.hero');
-    const contacto = document.getElementById('contacto-page');
-
-    if(hero) hero.style.display = 'block';
-
-    document.querySelectorAll('.section').forEach(function(seccion) {
-        seccion.style.display = 'block';
-    });
-
-    if(contacto) {
-        contacto.style.display = 'none';
-    }
-}
 
 </script>
 
