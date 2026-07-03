@@ -390,6 +390,25 @@ function mostrarContacto() {
     document.getElementById('contacto-page').style.display = 'flex';
 }
 
+function volverInicio() {
+
+    // Mostrar portada
+    document.querySelector('.hero').style.display = 'block';
+
+    // Mostrar todas las secciones
+    document.querySelectorAll('.section').forEach(function(seccion) {
+        seccion.style.display = 'block';
+    });
+
+    // Ocultar formulario
+    document.getElementById('contacto-page').style.display = 'none';
+
+    // Volver arriba
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}  
 
 </script>
 
