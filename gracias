@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta enviada</title>
+</head>
+<body style="font-family: Montserrat, sans-serif; text-align:center; padding-top:100px;">
+
+    <h1>✅ Consulta enviada correctamente</h1>
+
+    <p>
+        Gracias por contactarse con JP Servicios Industriales.
+    </p>
+
+    <p>
+        Nos comunicaremos a la brevedad.
+    </p>
+
+    <a href="https://jpserviciosindustriales.com.ar">
+        Volver al sitio
+    </a>
+
+</body>
+</html>
