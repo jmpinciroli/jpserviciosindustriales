@@ -360,6 +360,12 @@
     <input type="hidden" name="_subject" value="Nueva consulta desde JP Servicios Industriales">
     <input type="hidden" name="_captcha" value="false">
 
+    <!-- Redirige al volver del envío -->
+    <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+
+    <!-- Evita spam básico -->
+    <input type="text" name="_honey" style="display:none">
+
     <div class="mb-3">
         <input type="text"
                class="form-control"
@@ -395,9 +401,13 @@
         Enviar Consulta
     </button>
 
-</form>
-``
+    <a href="https://wa.me/5493547477700"
+       class="btn btn-success ms-2"
+       target="_blank">
+       WhatsApp
+    </a>
 
+</form>
 
 </script>
 
